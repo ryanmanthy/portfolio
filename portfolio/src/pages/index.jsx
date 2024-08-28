@@ -1,8 +1,11 @@
 import '../app/globals.css';
+import ReactDOM from 'react-dom';
+import Header from '../components/header.jsx';
 
 export default function Home() {
     return (
       <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
+        <Header />
   
         <main className="container mx-auto flex flex-col items-center justify-center flex-1 px-6 py-12">
           <h1 className="text-4xl md:text-6xl font-bold text-center text-black mb-8">ryan manthy</h1>
@@ -19,7 +22,8 @@ export default function Home() {
             obama-chesky scholar, civic digital fellow, and more...
           </p>
           <p className="text-lg md:text-2xl text-center text-black mb-8">
-            formerly dept. of health & human services, kaplan institute, and dom's kitchen & market
+            formerly dept. of health & human services, kaplan institute, and dom's kitchen & market <br />
+            startup tinkerer in bio, gov, & edu
           </p>
           <div className="flex space-x-4">
             <a href="/about" className="bg-blue-500 text-black px-4 py-2 rounded hover:bg-blue-600">About /</a> 
